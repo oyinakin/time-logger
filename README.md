@@ -15,13 +15,12 @@ CREATE TABLE public.time_logs (
 
 The app's db_config(db_config.js file in server folder) is tied to a .env file with following environment vairables for the database
  
-  user => process.env.user\n
-  database => process.env.database\n
+  user => process.env.user
+  database => process.env.database
   password => process.env.password
   port => process.env.port
   host => process.env.host
-  
-  
+   
   
 Download the files in repo, cd to client folder and run 'npm install' to install all dependencies. CD to the server folder(inside the client folder)  and run 'npm install' to install all dependencies for the server
 
