@@ -4,13 +4,12 @@ A simple app to log actions with date, start time, end time and description usin
 Database table:
 CREATE TABLE public.time_logs (
 	log_id uuid NOT NULL DEFAULT md5(random()::text || clock_timestamp()::text)::uuid,
-	log_date varchar NULL,
-	start_time varchar NULL,
-	end_time varchar NULL,
-	description varchar NULL,
-	entered_on timestamptz NULL,
+	log_date date NULL,
+	start_time time NULL,
+	end_time time NULL,
+	description text NULL,
+	entered_on timestamp NULL,
 	CONSTRAINT time_logs_pk PRIMARY KEY (log_id)
-	
 );
 
 The app's db_config(db_config.js file in server folder) is tied to a .env file with following environment vairables for the database
