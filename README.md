@@ -15,8 +15,8 @@ CREATE TABLE public.time_logs (
 
 The app's db_config(db_config.js file in server folder) is tied to a .env file with following environment vairables for the database
  
-  user => process.env.user
-  database => process.env.database
+  user => process.env.user\n
+  database => process.env.database\n
   password => process.env.password
   port => process.env.port
   host => process.env.host
